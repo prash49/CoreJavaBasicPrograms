@@ -12,9 +12,17 @@ public class VowelsOrConsonants {
         //checking whether input data is char or not
         if ((character >= 'a' && character <= 'z') || (character >= 'A' && character <= 'Z')) {
             switch (character) {
-                case 'a' + 'e' + 'i' + 'o' + 'u' + 'A' + 'E' + 'I' + 'O' + 'U':
+                case 'a':
+                case 'e':
+                case 'i':
+                case 'o':
+                case 'u':
+                case 'A':
+                case 'E':
+                case 'I':
+                case 'O':
+                case 'U':
                     System.out.print(character + " is vowel");
-                    break;
                 default:
                     System.out.println(character + " is consonant");
             }
