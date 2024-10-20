@@ -107,5 +107,20 @@ public class Java8PracticeProblems {
 
         listOfStrings2.stream().filter(i -> Character.isDigit(i.charAt(0))).forEach(System.out::println);
 
+
+        /*String == and .equals*/
+        String name = new String("Prashanth");
+        String name2 = "Prashanth";
+        String name3 = "Prashanth";
+
+        if(name == name2){
+            System.out.println(name); // gives false because it check the refence euality means its check are the references are pointing
+       /* to same object in the memory or not where .equals method checks the value eqaulity*/
+        }
+
+        if(name.equals(name2)){
+            System.out.println(".equls");
+        }
+
     }
 }

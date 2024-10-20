@@ -39,7 +39,7 @@ public class CollectorsPractice {
         *  .toList, toMap , toSet
         *  .toCollection
         * Collectors.joining() , Collectors.counting(),  Collectors.collectingAndThen
-        * TODO imp : Collectors.maxBy, minBy(),  summingInt , summingLong , summingDouble()
+        * TODO imp : Collectors.maxBy, minBy(),  summingInt , summingLong , summingDouble(), SummarizingAnalytics
         *  TODO imp : Collectors.groupinhBy , Collectors.partionBy() , Collectors.averingInt,.averagingLong, double
         *   lets see all these with Student example
         * */
