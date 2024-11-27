@@ -1,0 +1,60 @@
+              Collection Interface : is the root of the Java collection mostof the collections in java are inherited from this interface except
+              Map
+
+
+Collection has implemented and extended to List , SEt and queue
+
+List Interface : java.util.list
+1.contains ordered elements
+2.may include duplicates
+3.Supports indexed based search , random access
+
+Set: java.util.set
+1.doesn't define an order hence index based searching is not possible
+2. duplicates are not allowed in the Set
+
+Queue: java.util.queue
+1. follows queue structure to add and retrieve data like how the queue work firstcome will first served
+FIFO -> first in firstout
+
+Map : java.util.map
+1. stores data in key value format
+2. doesn't extend or inherit the Collection interface
+3. contains unique key
+4. can have duplicate values
+
+
+
+List Interface --> extended by ArrayList, LinkedList, Vector
+
+ArrayList :  dynamic resizing --> when it reaches its threshold its resizes by 50%
+2.not synchronized
+
+LinkedList : implements list and Deque interface
+2.maintains insertion order
+3. non synchronized
+4. can use ListIterator to iterate
+
+
+Set Interface : HashSet and LinkedList are the classes  and one interface  SortedSet which implement by TreeSet
+
+HashSet: it implecitly implements hashTable
+contains only unique elements
+Only one null can be added
+its unordered set
+
+LinkedHashSet
+maintains insertion ordered set
+
+
+Map interface : implements by HashMap and HashTable and extends to sorted map  which implemeted by Tree map
+
+HashMap : non synchronizec, one null key and multiple null values
+HashTable : its synchronized, doesn't allow null key and null values
+
+
+The main reason Map doesn't extend collection interface : add metod not present where put present
+Map follows key value pair where Collect follows object
+
+
+

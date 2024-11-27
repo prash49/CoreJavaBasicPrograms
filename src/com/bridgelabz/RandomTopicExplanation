@@ -1,0 +1,18 @@
+1. How to create  a singleton ?
+to create a singleton instance , we need to provide the instance through a static method
+make constructor as private so no other class can access it, only the inside the class it'll be accessable
+create a method where it call the constructor and creates a instance , so create a static class , private static constr
+create a static variable where it'll return one instance of Singleton class
+
+class Singleton{
+privare static Singleton instance;
+private statis Signleton(){}
+public static Singleton getInstance(){
+if(instance == null){
+ instance = new Singleton();
+}
+return instance;
+}
+}
+
+x
