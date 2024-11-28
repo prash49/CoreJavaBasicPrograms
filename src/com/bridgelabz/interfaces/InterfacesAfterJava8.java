@@ -6,4 +6,9 @@ public interface InterfacesAfterJava8 {
         System.out.println("having  fun");
     }
 
+    // static methods
+    // if define a static methods we should provide implemtation
+    // because static method can't overriden
+    // subvClassed method should have better access modifier than extended
+
 }
