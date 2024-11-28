@@ -8,8 +8,7 @@ public class BoxWeight extends  Box{
     }
 
     public BoxWeight(Double length, Double height, Double width, Double weight){
-
-        super(length, width, height);
+        super(length, width, height);// super keyword refers to its parent class in here its referring to Box class constructor
         this.weight = weight;
     }
 }

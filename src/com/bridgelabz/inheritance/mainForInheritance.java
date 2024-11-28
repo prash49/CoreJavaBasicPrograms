@@ -6,6 +6,7 @@ public class mainForInheritance {
 
 
         Box box =new BoxWeight(2.0,3.0,4.0,80.0);
+        System.out.println(boxWeight.weight);
 
     }
 }
