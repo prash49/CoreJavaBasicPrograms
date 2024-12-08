@@ -42,7 +42,6 @@ public class LoggerFactory {
         }*/
 
         /* TODO it can further optimized by lamda expression */
-
         return switch(name){
             case "Console" -> new ConsoleLogger();
             case "File" -> new FileLogger();
