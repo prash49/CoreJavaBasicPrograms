@@ -1,7 +1,9 @@
 package com.bridgelabz.multiThreading.repositoryImpl;
 
-import com.prashanth.multiThreading.Employee;
-import com.prashanth.multiThreading.repository.EmployeeRepo;
+
+
+import com.bridgelabz.multiThreading.Employee;
+import com.bridgelabz.multiThreading.repository.EmployeeRepo;
 
 import java.util.ArrayList;
 import java.util.List;

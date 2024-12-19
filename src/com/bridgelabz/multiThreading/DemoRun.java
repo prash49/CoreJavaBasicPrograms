@@ -1,9 +1,10 @@
 package com.bridgelabz.multiThreading;
 
-import com.prashanth.multiThreading.employeeServiceimpl.EmployeeServiceImpl;
-import com.prashanth.multiThreading.repositoryImpl.EmployeeRepositoryImplService;
-import com.prashanth.multiThreading.repositoryImpl.EmployeeRepositoryImplService2;
-import com.prashanth.multiThreading.repositoryImpl.EmployeeRepositoryImplService3;
+
+import com.bridgelabz.multiThreading.employeeServiceimpl.EmployeeServiceImpl;
+import com.bridgelabz.multiThreading.repositoryImpl.EmployeeRepositoryImplService;
+import com.bridgelabz.multiThreading.repositoryImpl.EmployeeRepositoryImplService2;
+import com.bridgelabz.multiThreading.repositoryImpl.EmployeeRepositoryImplService3;
 
 public class DemoRun {
     public static void main(String[] args) {
