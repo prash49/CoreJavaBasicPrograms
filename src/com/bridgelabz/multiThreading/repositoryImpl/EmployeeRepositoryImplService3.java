@@ -1,7 +1,9 @@
 package com.bridgelabz.multiThreading.repositoryImpl;
 
-import com.prashanth.multiThreading.Employee;
-import com.prashanth.multiThreading.repository.EmployeeRepo;
+
+
+import com.bridgelabz.multiThreading.Employee;
+import com.bridgelabz.multiThreading.repository.EmployeeRepo;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,6 +23,12 @@ public class EmployeeRepositoryImplService3 implements EmployeeRepo {
     public void displayEmployess() {
         for (Employee employee : employees) {
             System.out.println("Name of the employee is :" + employee.getName());
+        }
+        try {
+            Thread.sleep(1000);
+
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 
