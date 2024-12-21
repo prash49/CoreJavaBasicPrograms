@@ -3,11 +3,11 @@ package com.bridgelabz.multiThreading.employeeServiceimpl;
 
 import com.bridgelabz.multiThreading.repository.EmployeeRepo;
 
-public class EmployeeServiceImpl extends Thread {
+public class EmployeeServiceImplRun implements Runnable {
 
     private EmployeeRepo employeeRepo;
 
-    public EmployeeServiceImpl(EmployeeRepo employeeRepo) {
+    public EmployeeServiceImplRun(EmployeeRepo employeeRepo) {
         this.employeeRepo = employeeRepo;
     }
 
