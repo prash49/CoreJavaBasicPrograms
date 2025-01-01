@@ -3,6 +3,7 @@ import java.util.Arrays;
 import java.util.Map;
 import java.util.List;
 import java.util.WeakHashMap;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 
 public class Q14ConvertListStringToMapWithSize {
@@ -14,6 +15,7 @@ public class Q14ConvertListStringToMapWithSize {
 
         Map<String, Integer> stringIntegerMap =  fruits.stream().collect(Collectors.toMap(e -> e, String::length));
 
+        Map<String, Integer> stringIntegerMap2 = fruits.stream().collect(Collectors.toMap(Function.identity(), String::length));
         stringIntegerMap.forEach(
                 (fruit, size) -> System.out.println("fruitName:"+ fruit + " size:"+size)
         );

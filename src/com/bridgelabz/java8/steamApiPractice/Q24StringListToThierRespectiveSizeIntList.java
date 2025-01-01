@@ -12,6 +12,7 @@ public class Q24StringListToThierRespectiveSizeIntList {
         List<String> fruits = Arrays.asList("Banana", "Apple");
 
         List<Integer> lengthList = fruits.stream().map(String::length).collect(Collectors.toList());
+        System.out.println(lengthList);
     }
 }
 
