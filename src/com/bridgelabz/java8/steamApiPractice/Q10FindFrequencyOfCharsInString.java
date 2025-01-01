@@ -28,10 +28,7 @@ public class Q10FindFrequencyOfCharsInString {
         // Approach two using groppingBy
 
         Map<Character,Long> characterLongMap = input.chars()
-                .mapToObj(c -> (char) c)
+                .mapToObj(c -> (char) c)// transforming char to characterr lol
                 .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
-
-
-
     }
 }

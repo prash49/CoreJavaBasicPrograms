@@ -5,6 +5,7 @@ import com.bridgelabz.java8.Person;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 public class Q17NameOfOldestPersonFromObjList {
 
@@ -18,8 +19,11 @@ public class Q17NameOfOldestPersonFromObjList {
 
         Optional<Person> person = people.stream()
                 .max((p1, p2) -> Integer.compare(p1.getAge(),p2.getAge()));
-
+        // or
+        Optional<Person> person1 = people.stream().max((p1,p2) -> p1.getAge() - p2.getAge());
+// or
         String firstName = person.map(Person::getName).orElse("Not found");
+        people.stream().collect(Collectors.maxBy((p1,p2) -> p1.getAge() - p2.getAge() ));
 
     }
 

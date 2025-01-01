@@ -2,9 +2,7 @@ package com.bridgelabz.java8.steamApiPractice;
 
 import com.bridgelabz.java8.Gender;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class Q1GrouppingByExample {
@@ -29,6 +27,25 @@ public class Q1GrouppingByExample {
                 .collect(Collectors.groupingBy(Employee::getGender, Collectors.counting()));
 
         System.out.println("GenderCount "+ employeeCountByGender);
+
+        Map<Gender,List<Employee>> employeeMap = employeeList.stream().collect(Collectors.groupingBy(Employee::getGender));
+        // what if i need to Avg the age in the Gender
+        Map<Gender,Double> averagingInt = employeeList.stream().
+                collect(Collectors.groupingBy(Employee::getGender, Collectors.averagingInt(Employee::getAge)));
+
+        // lets whats the max age in genders
+        Map<Gender,Optional<Employee>>  maxby = employeeList.stream().collect(Collectors.groupingBy(Employee::getGender,Collectors.maxBy(Comparator.comparing(Employee::getAge))));
+
+        // same can be written using IntSummaryStatistics
+        Map<Gender,IntSummaryStatistics> summaryStatisticsMap = employeeList.stream().collect(Collectors.groupingBy(Employee::getGender,Collectors.summarizingInt(Employee::getAge)));
+
+        // partionin by
+
+        Map<Boolean, List<Employee>> partitionBy = employeeList.stream().collect(Collectors.partitioningBy( e -> e.getAge() > 25));
+
+        Map<Boolean,Long> partition = employeeList.stream().collect(Collectors.partitioningBy( e -> e.getAge() > 25, Collectors.counting()));
+
+        employeeList.stream().max(((o1, o2) -> o1.getAge() - o2.getAge()));
     }
 
 

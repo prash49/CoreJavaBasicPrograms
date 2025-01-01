@@ -1,8 +1,10 @@
 package com.bridgelabz.java8.steamApiPractice;
 
+import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
 import java.util.WeakHashMap;
+import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
 public class Q9FindNonRepeatatingCharFromString {
@@ -28,6 +30,29 @@ public class Q9FindNonRepeatatingCharFromString {
                 c -> System.out.println(c),
                 () -> System.out.println("not fount")
         );
+
+
+        //practice
+
+        inputString.chars().mapToObj(c -> (char)(c)).forEach(System.out::println);
+        System.out.println("-------------------------------------");
+        inputString.chars().mapToObj(c -> Character.valueOf((char) c)).forEach(System.out::println);
+        System.out.println("-------------------------------------");
+
+
+        Map<Character, Integer> characterIntegerMap = new HashMap<>();
+        inputString.chars()
+                .mapToObj(c -> (char) c)
+                .forEach( e -> characterIntegerMap.put(e, characterIntegerMap.getOrDefault(e,0) + 1));
+        System.out.println("characterIntegerMap" +characterIntegerMap);
+
+        characterIntegerMap.entrySet()
+                .stream()
+                .filter(e -> e.getValue() ==1)
+                .map(Map.Entry::getKey)
+                .findFirst().ifPresentOrElse(e -> System.out.println("key:"+ e) , () -> System.out.println("not found"));
+
+
 
     }
 }

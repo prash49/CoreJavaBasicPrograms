@@ -18,6 +18,11 @@ public class Q15FlattenTheList {
                 .flatMap(List::stream)
                 .collect(Collectors.toList());
 
+        // flatten the List
+        listList.stream().flatMap(List::stream).collect(Collectors.toList());
+
+        System.out.println("flat map:"+listList.stream().flatMap(List::stream).collect(Collectors.toList()));
+        System.out.println("map:"+listList.stream().map(List::stream).collect(Collectors.toList()));
 
         // without list
 

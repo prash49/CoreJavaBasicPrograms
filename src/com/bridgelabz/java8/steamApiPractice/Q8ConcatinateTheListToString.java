@@ -16,7 +16,7 @@ public class Q8ConcatinateTheListToString {
         //i need to add comma in between need to use delimiter inbetween
 
         String output2 = stringList.stream()
-                .collect(Collectors.joining(","));
+                 .collect(Collectors.joining(","));
 
         System.out.println(output2);
 
