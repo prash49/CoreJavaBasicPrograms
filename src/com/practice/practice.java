@@ -41,11 +41,11 @@ public class practice {
         binarySearch(array, target);
         // bubble sort
         bubbleSort(array);
-        System.out.println(Arrays.toString(array));
+        System.out.println("bubble sort:"+Arrays.toString(array));
         //selection sort
-        int[] array2 = {654,78,787,40};
-
-
+        int[] array2 = {654, 78, 787, 40};
+         selectionSort(array2);
+        System.out.println("selection sort: "+ Arrays.toString(array2));
         // insertion sort
 
 
@@ -79,7 +79,19 @@ public class practice {
     }
 
     // selection sort
-//    static void selection
+    static void selectionSort(int array[]) {
+        for (int i = 0; i < array.length; i++) {
+            int smallest = i;
+            for (int j = i + 1; j < array.length; j++) {
+                if(array[smallest] > array[j]){
+                    smallest = j;
+                }
+            }
+            int temp = array[smallest];
+            array[smallest] = array[i];
+            array[i] = temp;
+        }
+    }
 
 
 }
