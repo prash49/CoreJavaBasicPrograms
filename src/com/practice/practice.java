@@ -1,5 +1,7 @@
 package com.practice;
 
+import java.util.Arrays;
+
 public class practice {
     public static void main(String[] args) {
         int number = 123456;
@@ -36,18 +38,20 @@ public class practice {
 
 
         // binary search
-        binarySearch(array,target);
+        binarySearch(array, target);
         // bubble sort
-
+        bubbleSort(array);
+        System.out.println(Arrays.toString(array));
         //selection sort
+        int[] array2 = {654,78,787,40};
+
 
         // insertion sort
 
 
-
     }
 
-    static  int binarySearch(int[] array, int target) {
+    static int binarySearch(int[] array, int target) {
         int start = 0;
         int end = array.length - 1;
         while (start <= end) {
@@ -59,6 +63,23 @@ public class practice {
         }
         return -1;
     }
+
+    // sorting
+    static void bubbleSort(int[] arr) {
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr.length - i - 1; j++) {
+                if (arr[j] > arr[j + 1]) {
+                    //swap
+                    int temp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
+                }
+            }
+        }
+    }
+
+    // selection sort
+//    static void selection
 
 
 }
