@@ -11,5 +11,10 @@ public class InterviewQuestion2 {
         List<Integer> numbers = Arrays.asList(5,9,7,8,14,52,2);
         int sum = numbers.stream().filter(i -> i % 2 == 0 ).mapToInt( i -> i * 3).sum();
         System.out.println(sum);
+        int sum2  = numbers.stream().filter(i -> i % 2 ==0).mapToInt(i -> i * 3).reduce( (a,b) -> a + b).getAsInt();
+        int sum3  = numbers.stream().filter(i -> i % 2 ==0).mapToInt(i -> i * 3).reduce(0, Integer::sum);
+        System.out.println(sum2);
+        System.out.println(sum3);
+
     }
 }
