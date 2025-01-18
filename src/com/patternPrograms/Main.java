@@ -9,27 +9,27 @@ public class Main {
 
         //3. what do u need to print in each row ex: *  or 1's or 123's
 
-//        Pattern1.print(5);
-//
-//        System.out.println("--------------------------");
-//        // Pattern 2:
-//        // print 3 stars in each colum for 2 rows
-//        Pattern2.print();
-//        System.out.println("---------------------------");
-//        // Pattern 3 rever the first pattern
-//        Pattern3.print(3);
-//        System.out.println("---------------------");
-//        Pattern5.print(5);
-//        System.out.println("---------------------------");
-//        Pattern5.print2(5);
-//        System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
-//        Pattern5.print3(5);
-//        System.out.println("----------------------------------------");
-//        Pattern6.print(4);
-//        System.out.println("-----------------------------------------");
-//        Pattern7.print(5);
-//        System.out.println("--------------------------------------------");
-//        Pattern8.print(5);
+        Pattern1.print(5);
+
+        System.out.println("--------------------------");
+        // Pattern 2:
+        // print 3 stars in each colum for 2 rows
+        Pattern2.print();
+        System.out.println("---------------------------");
+        // Pattern 3 rever the first pattern
+        Pattern3.print(3);
+        System.out.println("---------------------");
+        Pattern5.print(5);
+        System.out.println("---------------------------");
+        Pattern5.print2(5);
+        System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+        Pattern5.print3(5);
+        System.out.println("----------------------------------------");
+        Pattern6.print(4);
+        System.out.println("-----------------------------------------");
+        Pattern7.print(5);
+        System.out.println("--------------------------------------------");
+        Pattern8.print(5);
 
 
       printAnything(5);
