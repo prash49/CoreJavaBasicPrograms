@@ -30,9 +30,14 @@ public class Main {
         Pattern7.print(5);
         System.out.println("--------------------------------------------");
         Pattern8.print(5);
+        System.out.println("---------------------------------------------");
+        Pattern9.print(5);
+        System.out.println("--------------------------------------------");
+        Pattern10.print(4);
+        System.out.println("--------------------------------------------");
+        Pattern11.print(4);
 
-
-      printAnything(5);
+//      printAnything(5);
 
     }
 
